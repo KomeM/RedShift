@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.home.koumei.redshift.MainActivity"
+    android:paddingTop="@dimen/vertical_margin"
+    android:paddingRight="@dimen/horizontal_margin"
+    android:paddingLeft="@dimen/horizontal_margin"
+    android:paddingBottom="@dimen/vertical_margin"
+    android:background="@android:color/holo_purple">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="top|center"
+        android:orientation="vertical">
+
+        <Switch
+            android:id="@+id/filter_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:gravity="center"
+            android:text="@string/stop"
+            android:textColor="@android:color/holo_orange_dark"
+            android:textOff="off"
+            android:textOn="on"
+            android:textSize="40dp"
+            tools:checked="false" />
+
+        <ImageView
+            android:id="@+id/filter_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/redshift_short"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="100dp"
+                android:text="@string/red_seek"
+                android:textColor="@color/colorAccent"
+                android:textSize="30sp" />
+            <TextView
+                android:id="@+id/red_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="31%"
+                android:textColor="@color/colorAccent"
+                android:textSize="30sp"
+                android:layout_marginLeft="80dp"/>
+
+            <Button
+                android:id="@+id/red_default"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginLeft="50dp"
+                android:background="@color/colorAccent"
+                android:text="@string/default_value"
+                android:textColor="@android:color/holo_orange_light"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <SeekBar
+            style="@style/Widget.AppCompat.SeekBar.Discrete"
+            android:id="@+id/red_seek"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/vertical_margin"
+            android:max="255"
+            android:min="0"
+            android:progress="80"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/brown_seek"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="30sp"
+                android:layout_marginLeft="100dp"/>
+            <TextView
+                android:id="@+id/brown_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:text="31%"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="30sp"
+                android:layout_marginLeft="47dp"/>
+
+            <Button
+                android:id="@+id/brown_default"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginLeft="50dp"
+                android:background="@android:color/darker_gray"
+                android:text="@string/default_value"
+                android:textColor="@android:color/black"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+
+        <SeekBar
+            style="@style/Widget.AppCompat.SeekBar.Discrete"
+            android:id="@+id/brown_seek"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/vertical_margin"
+            android:max="255"
+            android:min="0"
+            android:progress="80"/>
+
+        <TextView
+            android:gravity="center"
+            android:textSize="50dp"
+            android:text="Check"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/white"
+            android:layout_margin="60dp"></TextView>
+    </LinearLayout>
+
+
+</RelativeLayout>

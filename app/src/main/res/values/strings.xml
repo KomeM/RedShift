@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Redshift</string>
+    <string name="start">Red Shift</string>
+    <string name="stop">No filter</string>
+    <string name="red_seek">Red Setting</string>
+    <string name="brown_seek">Brown Setting</string>
+    <string name="default_value">default</string>
+</resources>
